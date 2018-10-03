@@ -30,6 +30,14 @@ comprendre le comportement attendu des constructeurs. Utilisez des assertions po
 ## Couverture de code
 
 > Q.2a Utilisez l’outil de couverture de code fourni dans Eclipse (ou autre IDE) pour identifier les chemins dans le code non couvert par vos tests. Rajoutez quelques tests si besoins (n’y passez pas trop de temps).
+>> La première couverture faite du code fourni ne couvre que 53% des méthodes.
+Les méthodes non couvertes sont les suivantes:
+>> - computeAngle
+>> - rotatePoint
+>> - centralSymmetry
+>> - getMiddlePoint
+>> - translate
+>> - setPoint
 
 > Q.2b Est-ce que votre code est sûr lorsque toutes les instructions sont couvertes par au moins un test ?
 
