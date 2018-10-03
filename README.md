@@ -1,4 +1,5 @@
 # Object-Oriented Software Testing
+# Combarel Florian, Thomas Aurélien
 
 Master 1 ICE, GLa - V&V - Labs ([course materials](http://combemale.fr/teaching/m1ice/))
 
@@ -14,10 +15,13 @@ comprendre le comportement attendu des constructeurs. Utilisez des assertions po
     ...
 
 > Q.1b Le test de ces constructeurs utilisent les opérations getX et getY. Ne trouvez-vous pas cela étrange qu’un test utilise d’autres opérations ? Que faire ?
+>> Oui cela est étrange car nous n'avons pas encore testé les getters. On ne peut donc pas être sûr que le test sur le constructeur soit fonctionnel. Il faut écrire les tests des getters avant le test du constructeur.
 
 > Q.1c Testez les accesseurs en lecture et écriture (les opérations get et set). Tout d’abord, testez getX et setX ensemble (car elles sont liées, idem pour y). Ensuite créez d’autres tests pour tester les opérations set avec la valeur Double.NaN (cf. la javadoc de ces opérations).
+>> Il y avait le setteur de Y qui alloué la nouvelle valeur sur X. Nous avons donc corrigé cette erreur. Les setteurs permettaient une allocation des Double.NaN, nous avons donc changé leurs codes pour qu'ils ne fassent rien.
 
 > Q.1d Testez le constructeur 3 et l’opération scale. Plusieurs tests (i.e. plusieurs opérations) seront nécessaires pour le constructeur 3. Vous pouvez constater que la plupart des tests nécessitent la création d’un point au début des opérations de test.
+>> Nous avons corrigé l'erreur sur le constructeur 3 qui ne pouvait pas prendre en compte le passage en paramètre d'un objet null.
 
 > Q.1e Définissez et utilisez l’opération @Before setUp() et tout ce qui est également nécessaire pour déléguer cette création à l’opération setUp.
 
