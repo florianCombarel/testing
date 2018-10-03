@@ -1,5 +1,5 @@
 # Object-Oriented Software Testing
-# Combarel Florian, Thomas Aurélien
+## Combarel Florian, Thomas Aurélien
 
 Master 1 ICE, GLa - V&V - Labs ([course materials](http://combemale.fr/teaching/m1ice/))
 
