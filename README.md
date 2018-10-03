@@ -55,6 +55,7 @@ L’opération setPoint(Random r1, Random r2) définit les coordonnées d’un p
 
 > Q.3a Expliquez en quoi il est impossible de tester en l’état cette opération.
     >> On veut donc utiliser le principe du Mock pour tester cette opération.
+>> Il est impossible de tester l'état du point avec Random car nous ne pouvons prévoir la position que le point aura.
 
 > Q.3b Utilisez Easymock ou Mockito pour tester cette opération. 
 
