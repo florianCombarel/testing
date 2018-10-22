@@ -1,5 +1,5 @@
 # Object-Oriented Software Testing
-# Combarel Florian, Thomas Aurélien
+## Combarel Florian, Thomas Aurélien
 
 Master 1 ICE, GLa - V&V - Labs ([course materials](http://combemale.fr/teaching/m1ice/))
 
@@ -24,14 +24,26 @@ comprendre le comportement attendu des constructeurs. Utilisez des assertions po
 >> Nous avons corrigé l'erreur sur le constructeur 3 qui ne pouvait pas prendre en compte le passage en paramètre d'un objet null.
 
 > Q.1e Définissez et utilisez l’opération @Before setUp() et tout ce qui est également nécessaire pour déléguer cette création à l’opération setUp.
+>> Before setUp permet d'initiliaser la même situtation pour tous les tests comme ça ils possédent tous les même objets. On doit 
+importer la librairie JUnite before pour permettre cette délégation.
 
 > Q.1f Testez l’opération horizontalSymmetry. Là encore, plusieurs tests (i.e. plusieurs opérations) seront nécessaires. Vous remarquerez que cette opération peut lever une exception. Utilisez le paramètre expected de l’annotation Test pour vérifier que cette exception est bien levée en temps voulu.
 
 ## Couverture de code
 
 > Q.2a Utilisez l’outil de couverture de code fourni dans Eclipse (ou autre IDE) pour identifier les chemins dans le code non couvert par vos tests. Rajoutez quelques tests si besoins (n’y passez pas trop de temps).
+>> La première couverture faite du code fourni ne couvre que 53% des méthodes.
+Les méthodes non couvertes sont les suivantes:
+>> - computeAngle
+>> - rotatePoint
+>> - centralSymmetry
+>> - getMiddlePoint
+>> - translate
+>> - setPoint
 
 > Q.2b Est-ce que votre code est sûr lorsque toutes les instructions sont couvertes par au moins un test ?
+
+>> Non le code  n'est pas sûr si toutes les instructions sont couvertes car les instruction peuvent être couvertes mais ne pas prendre en compte tous les cas d'utilisation.
 
 > Q.2c Ajoutez le test unitaire suivant et exécutez-le. S’il passe, bien joué. Dans tout les cas cela peut certainement vous aidez à répondre à la question précédente.
 
@@ -47,6 +59,7 @@ L’opération setPoint(Random r1, Random r2) définit les coordonnées d’un p
 
 > Q.3a Expliquez en quoi il est impossible de tester en l’état cette opération.
     >> On veut donc utiliser le principe du Mock pour tester cette opération.
+>> Il est impossible de tester l'état du point avec Random car nous ne pouvons prévoir la position que le point aura.
 
 > Q.3b Utilisez Easymock ou Mockito pour tester cette opération. 
 
