@@ -24,6 +24,8 @@ comprendre le comportement attendu des constructeurs. Utilisez des assertions po
 >> Nous avons corrigé l'erreur sur le constructeur 3 qui ne pouvait pas prendre en compte le passage en paramètre d'un objet null.
 
 > Q.1e Définissez et utilisez l’opération @Before setUp() et tout ce qui est également nécessaire pour déléguer cette création à l’opération setUp.
+>> Before setUp permet d'initiliaser la même situtation pour tous les tests comme ça ils possédent tous les même objets. On doit 
+importer la librairie JUnite before pour permettre cette délégation.
 
 > Q.1f Testez l’opération horizontalSymmetry. Là encore, plusieurs tests (i.e. plusieurs opérations) seront nécessaires. Vous remarquerez que cette opération peut lever une exception. Utilisez le paramètre expected de l’annotation Test pour vérifier que cette exception est bien levée en temps voulu.
 
