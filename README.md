@@ -41,6 +41,8 @@ Les méthodes non couvertes sont les suivantes:
 
 > Q.2b Est-ce que votre code est sûr lorsque toutes les instructions sont couvertes par au moins un test ?
 
+>> Non le code  n'est pas sûr si toutes les instructions sont couvertes car les instruction peuvent être couvertes mais ne pas prendre en compte tous les cas d'utilisation.
+
 > Q.2c Ajoutez le test unitaire suivant et exécutez-le. S’il passe, bien joué. Dans tout les cas cela peut certainement vous aidez à répondre à la question précédente.
 
     @Test public void testCentralSymmetryNULL ( ) {
